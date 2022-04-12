@@ -1,8 +1,6 @@
-# DEVIN NextJS Template
+# DEVIN Portfolio
 
-> Helping when start new frontend project
-
-This is NextJS with React 18 template, which support auto format with eslint and intergrate `husky` for code checking before commit. This will help in smooth out project building.
+Copyright (c) 2022 DEVIN, Ltd; All rights reserved.
 
 ## Project detail
 
