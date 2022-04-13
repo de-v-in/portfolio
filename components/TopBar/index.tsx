@@ -1,6 +1,7 @@
 import { ToggleTopBarAtom } from "@atoms/app";
+import Logo from "@public/logo.png";
+import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 
 export const TopBarComponent: IComponent = () => {
@@ -10,16 +11,17 @@ export const TopBarComponent: IComponent = () => {
   };
   return (
     <>
-      <nav className="relative lg:grid lg:grid-cols-2  items-center  bg-zinc-50 p-2.5 ">
+      <nav className="relative lg:grid lg:grid-cols-2  items-center  bg-zinc-50 py-2.5 lg:px-2.5 ">
         <Link href="/">
           <a className="inline-flex items-center p-2">
-            <span className="text-xl text-black font-bold uppercase tracking-wide">
-              Logo
+            <Image src={Logo} alt="deVin Logo" height="40" width="42" />
+            <span className="ml-2 text-xl text-black font-bold font-logo uppercase tracking-wide">
+              devin
             </span>
           </a>
         </Link>
         <button
-          className="absolute right-2 inline-flex p-3 hover:bg-gray-900 rounded lg:hidden text-black mr-0 hover:text-white outline-none"
+          className="absolute  top-[22px] right-2 inline-flex p-1  hover:bg-gray-900 rounded lg:hidden  mr-0 hover:text-white outline-none"
           onClick={handleToggleTopBar}
         >
           <svg
@@ -37,19 +39,30 @@ export const TopBarComponent: IComponent = () => {
             />
           </svg>
         </button>
-        <div className="lg:flex">
-          <div className="lg:grid lg:grid-cols-3  w-full lg:items-center  gap-0">
-            <Link href="/">
-              <a className="p-2 text-lg font-medium ml-2">Projects</a>
+        <div
+          className={`${
+            toggleMode === "hidden" ? "hidden" : "flex"
+          } bg-white lg:flex lg:bg-zinc-50`}
+        >
+          <div className="flex flex-col lg:grid lg:grid-cols-3 lg:items-center w-full">
+            <Link href="/projects">
+              <a
+                className="p-2 font-medium text-lg text-left  border-b border-[#EAEFF0] lg:border-0 lg:ml-2 hover:underline hover:underline-offset-1 
+             "
+              >
+                Projects
+              </a>
             </Link>
-            <Link href="/">
-              <a className="p-2 text-lg font-medium ml-2">Details</a>
+            <Link href="/details">
+              <a className="p-2 font-medium text-lg text-left  border-b border-[#EAEFF0] lg:border-0 lg:ml-2 hover:underline hover:underline-offset-1">
+                Details
+              </a>
             </Link>
-            <div className="p-1 flex items-center justify-center ">
-              <div className="flex justify-around p-1 w-3/4 bg-white rounded-2xl shadow-_xl">
+            <div className=" h-screen p-1 my-4 flex items-start    justify-center lg:h-fit  lg:my-0">
+              <div className="flex justify-around p-1 bg-white lg:rounded-2xl  md:w-1/6 lg:shadow-_xl  lg:w-3/4  ">
                 <a className="p-1" href="facebook.com/tranhuyducseven">
                   <svg
-                    className="w-5 h-5 text-blue-600 fill-current"
+                    className="w-4 h-4  lg:w-5 lg:h-5 text-blue-600 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
@@ -58,7 +71,7 @@ export const TopBarComponent: IComponent = () => {
                 </a>
                 <a className=" p-1" href="facebook.com/tranhuyducseven">
                   <svg
-                    className="w-5 h-5 text-blue-400 fill-current"
+                    className="w-4 h-4  lg:w-5 lg:h-5 text-blue-400 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 496 512"
                   >
@@ -68,7 +81,7 @@ export const TopBarComponent: IComponent = () => {
                 <a className="p-1" href="facebook.com/tranhuyducseven">
                   <svg
                     viewBox="0 0 16 16"
-                    className="w-5 h-5"
+                    className="w-4 h-4  lg:w-5 lg:h-5"
                     fill="currentColor"
                     aria-hidden="true"
                   >
