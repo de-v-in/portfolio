@@ -15,7 +15,7 @@ export const TopBarComponent: IComponent = () => {
         <Link href="/">
           <a className="inline-flex items-center p-2">
             <Image src={Logo} alt="deVin Logo" height="40" width="42" />
-            <span className="ml-2 text-xl text-black font-bold font-logo uppercase tracking-wide">
+            <span className="ml-2 text-black text-lg font-bold font-logo uppercase tracking-wide lg:text-xl">
               devin
             </span>
           </a>
@@ -46,15 +46,12 @@ export const TopBarComponent: IComponent = () => {
         >
           <div className="flex flex-col lg:grid lg:grid-cols-3 lg:items-center w-full">
             <Link href="/projects">
-              <a
-                className="p-2 font-medium text-lg text-left  border-b border-[#EAEFF0] lg:border-0 lg:ml-2 hover:underline hover:underline-offset-1 
-             "
-              >
+              <a className="p-2 font-medium text-sm text-left  text-zinc-700 border-b border-[#EAEFF0] lg:border-0 lg:ml-2 lg:text-lg hover:underline hover:underline-offset-1">
                 Projects
               </a>
             </Link>
             <Link href="/details">
-              <a className="p-2 font-medium text-lg text-left  border-b border-[#EAEFF0] lg:border-0 lg:ml-2 hover:underline hover:underline-offset-1">
+              <a className="p-2 font-medium text-sm text-left  text-zinc-700 border-b border-[#EAEFF0] lg:border-0 lg:ml-2 lg:text-lg hover:underline hover:underline-offset-1 ">
                 Details
               </a>
             </Link>
