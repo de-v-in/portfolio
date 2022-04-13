@@ -1,3 +1,4 @@
+import { FooterComponent } from "@components/Footer";
 import { TopBarComponent } from "@components/TopBar";
 
 export const DefaultLayout: IComponent = ({ children }) => {
@@ -5,6 +6,7 @@ export const DefaultLayout: IComponent = ({ children }) => {
     <div className="default-layout">
       <TopBarComponent />
       <div>{children}</div>
+      <FooterComponent />
     </div>
   );
 };
