@@ -25,7 +25,7 @@ export const AppScreen: IComponent = ({}) => {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.title}>
+        <div className={styles.title + "font-primary text-lg"}>
           <TemplateComponent
             text="Welcome to"
             color={darkMode === "dark" ? "white" : "black"}
