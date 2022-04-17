@@ -15,7 +15,7 @@ export const TopBarComponent: IComponent = () => {
         <Link href="/">
           <a className="inline-flex items-center p-2">
             <Image src={Logo} alt="deVin Logo" height="40" width="42" />
-            <span className="ml-2 text-black text-lg font-bold font-logo uppercase tracking-wide lg:text-xl">
+            <span className="ml-2 text-black text-lg font-bold font-primary uppercase tracking-wide lg:text-xl">
               devin
             </span>
           </a>
@@ -46,23 +46,23 @@ export const TopBarComponent: IComponent = () => {
         >
           <div className="flex flex-col lg:grid lg:grid-cols-3 lg:items-center w-full">
             <Link href="/projects">
-              <a className="p-2 font-medium text-sm text-left  text-zinc-700 border-b border-[#EAEFF0] lg:border-0 lg:ml-2 lg:text-lg hover:underline hover:underline-offset-1">
+              <a className="p-2 font-medium text-sm text-center  text-zinc-700 border-b border-[#EAEFF0] lg:border-0  lg:text-lg hover:underline hover:underline-offset-1">
                 Projects
               </a>
             </Link>
             <Link href="/details">
-              <a className="p-2 font-medium text-sm text-left  text-zinc-700 border-b border-[#EAEFF0] lg:border-0 lg:ml-2 lg:text-lg hover:underline hover:underline-offset-1 ">
+              <a className="p-2 font-medium text-sm text-center  text-zinc-700 border-b border-[#EAEFF0] lg:border-0 lg:text-lg hover:underline hover:underline-offset-1 ">
                 Details
               </a>
             </Link>
-            <div className=" h-screen p-1 my-4 flex items-start    justify-center lg:h-fit  lg:my-0">
-              <div className="flex justify-around p-1 bg-white lg:rounded-2xl  md:w-1/6 lg:shadow-_xl  lg:w-3/4  ">
+            <div className=" h-screen p-1 my-4 flex items-start   justify-center lg:h-fit  lg:my-0">
+              <div className="flex justify-around p-1  lg:rounded-2xl  md:w-1/6  lg:w-3/4  ">
                 <a
                   className=" p-1"
                   href="https://www.linkedin.com/in/tcdnguyen/"
                 >
                   <svg
-                    className="w-4 h-4  lg:w-5 lg:h-5 text-blue-500 fill-current"
+                    className="w-4 h-4  lg:w-5 lg:h-5 text-black fill-current"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
                   >
@@ -74,7 +74,7 @@ export const TopBarComponent: IComponent = () => {
                   href="https://www.facebook.com/tranhuyducseven/"
                 >
                   <svg
-                    className="w-4 h-4  lg:w-5 lg:h-5 text-blue-600 fill-current"
+                    className="w-4 h-4  lg:w-5 lg:h-5 text-black fill-current"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
