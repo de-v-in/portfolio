@@ -6,7 +6,7 @@ import Link from "next/link";
 export const FooterComponent: IComponent = () => {
   return (
     <>
-      <footer className="p-2 lg:p-5 grid grid-cols-4 items-center  bg-black">
+      <footer className="p-2 lg:p-5 grid grid-cols-4 items-center  bg-default">
         <div className="p-5 h-full border-r-2 border-white col-span-3 flex items-center">
           <div className="text-white">
             <h2 className="font-bold lg:text-xl text-base">FAQ</h2>
@@ -29,7 +29,7 @@ export const FooterComponent: IComponent = () => {
         <div className="flex items-center flex-col">
           <Link href="/">
             <a className="inline-flex items-center justify-center p-2">
-              <Image src={Logo} alt="deVin Logo" height="60" width="200" />
+              <Image src={Logo} alt="deVin Logo" height="53" width="200" />
             </a>
           </Link>
           <span className="p-1 text-[#BEBEBE] text-xxs lg:text-xs text-thin  text-center">
