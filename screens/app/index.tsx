@@ -3,7 +3,6 @@ import { TemplateComponent } from "@components/_template";
 import { TEAM_NAME } from "@env";
 import { cx } from "@utils/tools";
 import Head from "next/head";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import setLanguage from "next-translate/setLanguage";
 import useTranslation from "next-translate/useTranslation";
@@ -25,7 +24,7 @@ export const AppScreen: IComponent = ({}) => {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.title}>
+        <div className={styles.title + "font-primary text-lg"}>
           <TemplateComponent
             text="Welcome to"
             color={darkMode === "dark" ? "white" : "black"}
