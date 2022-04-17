@@ -1,7 +1,6 @@
 # DEVIN Portfolio
 
-Copyright (c) 2022 DEVIN, Ltd; All rights reserved.
-
+Copyright (c) 2022 DEVIN, Ltd;
 ## Project detail
 
 ### Commands
