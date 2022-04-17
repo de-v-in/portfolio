@@ -52,7 +52,6 @@ const TransitionLayout: React.FC<TransitionKind<ReactChild>> = function ({
       >
         {(status) => (
           <div
-            className="absolute top-0 left-0 w-full h-full"
             style={{
               ...TransitionStyles[status],
             }}
