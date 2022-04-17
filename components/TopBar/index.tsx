@@ -15,7 +15,7 @@ export const TopBarComponent: IComponent = () => {
       <nav className="relative lg:grid lg:grid-cols-2  items-center  bg-default py-2.5 lg:px-2.5 ">
         <Link href="/">
           <a className="inline-flex items-center p-2">
-            <Image src={Logo} alt="deVin Logo" height="45" width="150" />
+            <Image src={Logo} alt="deVin Logo" height="40" width="150" />
           </a>
         </Link>
         <button
