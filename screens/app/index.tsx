@@ -49,7 +49,7 @@ export const AppScreen: IComponent = ({}) => {
         </button>
         <button
           className="active:scale-75 ease-in-out duration-500 rounded-full bg-green-600 text-white p-2 mt-3"
-          onClick={() => router.push("/about")}
+          onClick={() => router.push("/details")}
         >
           GO TO ABOUT
         </button>
