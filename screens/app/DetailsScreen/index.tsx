@@ -1,8 +1,32 @@
+import { WidgetComponent } from "@components/Widget";
 import details01 from "@public/details01.png";
 import Head from "next/head";
 import Image from "next/image";
 
 export const DetailsScreen: IComponent = ({}) => {
+  const widget = {
+    title: "Project information",
+    list: {
+      project: {
+        date: "12/1/20021",
+        location: "HCM",
+        client: "string",
+        category: "string",
+        projectLink: "string",
+      },
+    },
+  };
+  const widget2 = {
+    title: "contact information",
+    list: {
+      contact: {
+        address: "HCM",
+        mail: "@gmial.com",
+        phone: "034982343",
+      },
+    },
+  };
+
   return (
     <div className="">
       <Head>
@@ -73,7 +97,10 @@ export const DetailsScreen: IComponent = ({}) => {
                 </p>
               </div>
             </div>
-            <div className="">1/3</div>
+            <div className="flex flex-col p-2">
+              <WidgetComponent title={widget.title} list={widget.list} />
+              <WidgetComponent title={widget2.title} list={widget2.list} />
+            </div>
           </div>
         </div>
       </main>
