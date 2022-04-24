@@ -1,30 +1,44 @@
+import { ContentComponent } from "@components/Content";
 import { WidgetComponent } from "@components/Widget";
-import details01 from "@public/details01.png";
 import Head from "next/head";
-import Image from "next/image";
 
 export const DetailsScreen: IComponent = ({}) => {
+  const content = {
+    imageSrc: "abcxaudfasdfsfsd",
+    heading: "DMS",
+    subheading: "Backend server",
+    paragraphs: [
+      "Definition: Business strategy can be understood as the course of action or set of  decisions which assist the entrepreneurs in achieving specific business objectives.",
+      "Definition: Business strategy can be understood as the course of action or set of  decisions which assist the entrepreneurs in achieving specific business objectives.",
+      "Definition: Business strategy can be understood as the course of action or set of  decisions which assist the entrepreneurs in achieving specific business objectives.",
+    ],
+    techs: [
+      "Golang",
+      "Gin",
+      "Gorm",
+      "MSSQL",
+      "Docker",
+      "CI/CD github action",
+      "Swagger documentation",
+      "Paho MQTT client",
+      "EMQX MQTT broker",
+    ],
+    scope:
+      "Create HTTP API for client apps to control doors in university. Set up communication between BE server with Raspberry gateway via MQTT protocol/APIs.Store/retrieve data, logs and schedulers of doors/gateways.",
+  };
   const widget = {
     title: "Project information",
-    list: {
-      project: {
-        date: "12/1/20021",
-        location: "HCM",
-        client: "string",
-        category: "string",
-        projectLink: "string",
-      },
-    },
+    date: "12/1/20021",
+    location: "HCM",
+    client: "string",
+    category: "string",
+    projectLink: "string",
   };
   const widget2 = {
     title: "contact information",
-    list: {
-      contact: {
-        address: "HCM",
-        mail: "@gmial.com",
-        phone: "034982343",
-      },
-    },
+    address: "HCM",
+    mail: "@gmial.com",
+    phone: "034982343",
   };
 
   return (
@@ -42,64 +56,12 @@ export const DetailsScreen: IComponent = ({}) => {
         </div>
         <div className="container mx-auto py-40">
           <div className="grid grid-cols-3 gap-10">
-            <div className="col-span-2 flex flex-col  p-2">
-              <div className="image mb-5">
-                <Image
-                  src={details01}
-                  alt="Details_01"
-                  height={430}
-                  className="rounded-lg"
-                  layout="responsive"
-                />
-              </div>
-              <div className="content mb-5 p-1">
-                <h1 className="text-3xl font-bold ">DMS</h1>
-                <h2 className="text-2xl font-medium ">Backend server</h2>
-              </div>
-              <div>
-                <p className="text-base mb-7 text-[#68666C]">
-                  Definition: Business strategy can be understood as the course
-                  of action or set of decisions which assist the entrepreneurs
-                  in achieving specific business objectives.
-                </p>
-                <p className="text-base mb-7 text-[#68666C]">
-                  Definition: Business strategy can be understood as the course
-                  of action or set of decisions which assist the entrepreneurs
-                  in achieving specific business objectives.
-                </p>
-                <p className="text-base mb-7 text-[#68666C]">
-                  Definition: Business strategy can be understood as the course
-                  of action or set of decisions which assist the entrepreneurs
-                  in achieving specific business objectives.
-                </p>
-              </div>
-              <div>
-                <ul className="font-bold list-disc mb-7">
-                  Tech stack:
-                  <li className="ml-5 font-normal">Golang</li>
-                  <li className="ml-5 font-normal">Gin</li>
-                  <li className="ml-5 font-normal">Gorm</li>
-                  <li className="ml-5 font-normal">MSSQL</li>
-                  <li className="ml-5 font-normal">Docker</li>
-                  <li className="ml-5 font-normal">CI/CD github action</li>
-                  <li className="ml-5 font-normal">Swagger documentation</li>
-                  <li className="ml-5 font-normal">Paho MQTT client</li>
-                  <li className="ml-5 font-normal">EMQX MQTT broker</li>
-                </ul>
-              </div>
-              <div>
-                <p className="text-base mb-7 text-[#68666C]">
-                  <span className="italic"> Scope of work: </span> Create HTTP
-                  API for client apps to control doors in university. Set up
-                  communication between BE server with Raspberry gateway via
-                  MQTT protocol/APIs. Store/retrieve data, logs and schedulers
-                  of doors/gateways.
-                </p>
-              </div>
+            <div className="col-span-2 flex flex-col p-2">
+              <ContentComponent {...content} />
             </div>
             <div className="flex flex-col p-2">
-              <WidgetComponent title={widget.title} list={widget.list} />
-              <WidgetComponent title={widget2.title} list={widget2.list} />
+              <WidgetComponent {...widget} />
+              <WidgetComponent {...widget2} />
             </div>
           </div>
         </div>
