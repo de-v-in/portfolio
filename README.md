@@ -8,7 +8,7 @@ Copyright (c) 2022 DEVIN, Ltd;
 
 ### Commands
 
-- Run: `yarn install` for install all packages
+- Run: `yarn` for install all packages
 - Run: `yarn dev` for start dev environment
 - Run: `yarn build` for build your project
 - Run: `yarn start` for start your built project
