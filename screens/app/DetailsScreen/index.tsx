@@ -28,17 +28,21 @@ export const DetailsScreen: IComponent = ({}) => {
   };
   const widget = {
     title: "Project information",
-    date: "12/1/20021",
-    location: "HCM",
-    client: "string",
-    category: "string",
-    projectLink: "string",
+    project: {
+      date: "12/1/20021",
+      location: "HCM",
+      client: "string",
+      category: "UX",
+      link: "https://nextjs.org",
+    },
   };
   const widget2 = {
     title: "contact information",
-    address: "HCM",
-    mail: "@gmial.com",
-    phone: "034982343",
+    contact: {
+      address: "HCM",
+      mail: "@gmial.com",
+      phone: "034982343",
+    },
   };
 
   return (
@@ -55,11 +59,11 @@ export const DetailsScreen: IComponent = ({}) => {
           </div>
         </div>
         <div className="container mx-auto py-40">
-          <div className="grid grid-cols-3 gap-10">
-            <div className="col-span-2 flex flex-col p-2">
+          <div className="grid grid-rows-3 xl:grid-cols-3 gap-10">
+            <div className="row-span-2 xl:col-span-2 flex flex-col p-2">
               <ContentComponent {...content} />
             </div>
-            <div className="flex flex-col p-2">
+            <div className="flex flex-col justify-between  xl:flex xl:flex-col p-2">
               <WidgetComponent {...widget} />
               <WidgetComponent {...widget2} />
             </div>

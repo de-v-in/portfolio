@@ -14,7 +14,7 @@ export const ContentComponent: IComponent<IContentComponentProps> = (props) => {
   return (
     <>
       <div className="image mb-5">
-        {/* post.src*/}
+        {/* content.src*/}
         <Image
           src={details01}
           alt="Details_01"

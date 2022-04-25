@@ -1,32 +1,23 @@
+import { ContactComponent, IContactProps } from "./Contact";
+import { IProjectProps, ProjectComponent } from "./Project";
+
 interface IWidgetComponentProps {
   title: string;
-  date?: string;
-  location?: string;
-  client?: string;
-  category?: string;
-  link?: string;
-  address?: string;
-  mail?: string;
-  phone?: string;
+  project?: IProjectProps;
+  contact?: IContactProps;
 }
-export const WidgetComponent: IComponent<IWidgetComponentProps> = (props) => {
-  const anotherPropsOfWidgetComponent: any[] = [];
-  Object.entries(props).forEach(([key, value]) => {
-    anotherPropsOfWidgetComponent.push(
-      <li key={key} className="mb-3">
-        <span className="capitalize font-semibold mr-1">{`${key}:   `}</span>
-        {value}
-      </li>
-    );
-  });
+export const WidgetComponent: IComponent<IWidgetComponentProps> = ({
+  title,
+  project,
+  contact,
+}) => {
   return (
     <div className="widget p-9 border-2 border-[#f7f7f7] mb-8 rounded-lg">
-      <h5 className="widget-title text-2xl font-bold text-center mb-6 capitalize">
-        {props.title}
+      <h5 className="widget-title text-2xl xl:text-xl 2xl:text-2xl font-bold text-left mb-6 capitalize">
+        {title}
       </h5>
-      <div className="project">
-        <ul>{anotherPropsOfWidgetComponent}</ul>
-      </div>
+      {!!project && <ProjectComponent {...project} />}{" "}
+      {!!contact && <ContactComponent {...contact} />}
     </div>
   );
 };
