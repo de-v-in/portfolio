@@ -49,7 +49,7 @@ export const TopBarComponent: IComponent = () => {
                   Projects
                 </a>
               </Link>
-              <Link href="/details">
+              <Link href="/details/post1">
                 <a className="px-8 py-2 font-medium  text-center  text-white text-sm md:text-base lg:text-lg hover:underline hover:underline-offset-1">
                   Details
                 </a>
