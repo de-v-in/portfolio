@@ -43,7 +43,7 @@ export const TopBarComponent: IComponent = () => {
           } bg-white lg:flex lg:bg-zinc-50`}
         >
           <div className="lg:grid lg:grid-cols-3 lg:items-center w-full bg-default">
-            <div className="flex flex-col col-span-2  justify-center lg:flex-row">
+            <div className="flex flex-col col-span-2  justify-end lg:flex-row">
               <Link href="/projects">
                 <a className="px-8 py-2 font-medium  text-center  text-white text-sm md:text-base lg:text-lg hover:underline hover:underline-offset-1">
                   Projects

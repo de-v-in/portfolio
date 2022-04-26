@@ -1,4 +1,4 @@
-import { DarkmodeAtom } from "@atoms/app";
+import { DarkmodeAtom, ProjectInfoListAtom } from "@atoms/app";
 import { TemplateComponent } from "@components/_template";
 import { TEAM_NAME } from "@env";
 import { cx } from "@utils/tools";
@@ -13,6 +13,7 @@ import styles from "./styles.module.scss";
 export const AppScreen: IComponent = ({}) => {
   const { t, lang } = useTranslation("common");
   const [darkMode, setDarkMode] = useRecoilState(DarkmodeAtom);
+  const [projectInfoList] = useRecoilState(ProjectInfoListAtom);
   const router = useRouter();
 
   return (
@@ -24,71 +25,21 @@ export const AppScreen: IComponent = ({}) => {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.title + "font-primary text-lg"}>
-          <TemplateComponent
-            text="Welcome to"
-            color={darkMode === "dark" ? "white" : "black"}
-          />
-          <a href="https://nextjs.org">{t("title", { name: TEAM_NAME })}</a>
-        </div>
-
-        <button
-          onClick={() =>
-            setDarkMode((mode) => (mode === "dark" ? "light" : "dark"))
-          }
-          className="active:scale-75 ease-in-out duration-500 rounded-full bg-blue-400 text-white p-2 mt-3"
-        >
-          Change Dark Mode
-        </button>
-
-        <button
-          onClick={() => setLanguage(lang === "vi" ? "en" : "vi")}
-          className="active:scale-75 ease-in-out duration-500 rounded-full bg-teal-600 text-white p-2 mt-3"
-        >
-          Change Language
-        </button>
-        <button
-          className="active:scale-75 ease-in-out duration-500 rounded-full bg-green-600 text-white p-2 mt-3"
-          onClick={() => router.push("/about")}
-        >
-          GO TO ABOUT
-        </button>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={cx(styles.code, "dark:text-black")}>
-            pages/index.tsx
-          </code>
-        </p>
+        <h1 className="font-semibold lg:text-4xl">
+          {"Our works".toUpperCase()}
+        </h1>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          {projectInfoList.map((projectInfo, idx) => (
+            <a href="https://nextjs.org/docs" className={styles.card} key={idx}>
+              <h2 className="font-semibold lg:text-xl text-base">
+                {projectInfo.name}
+              </h2>
+              <p className="!text-xs whitespace-pre-line">
+                {projectInfo.description}
+              </p>
+            </a>
+          ))}
         </div>
       </main>
     </div>
