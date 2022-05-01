@@ -1,5 +1,7 @@
 import { DarkmodeAtom, ProjectInfoListAtom } from "@atoms/app";
 import { TemplateComponent } from "@components/_template";
+import { Banner } from "@components/Banner";
+import { ProjectCard } from "@components/ProjectCard/indext";
 import { TEAM_NAME } from "@env";
 import { cx } from "@utils/tools";
 import Head from "next/head";
@@ -23,21 +25,7 @@ export const AppScreen: IComponent = ({}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="flex px-20 pt-16 flex-col w-full bg-default text-white">
-        <h1 className="md:text-6xl sm:text-3l text-3xl">
-          We deliver high-standard software products for crypto market
-        </h1>
-        <p className="my-4 text-xl">
-          We keep your application running smoothly in any level, from MVP to
-          large scale application & up-to-date with the latest technology.
-        </p>
-        <button
-          type="button"
-          className="w-1/4 rounded-full bg-yellow-300 text-black focus:outline-none text-xl  px-5 py-2.5 text-center mr-2 mb-8"
-        >
-          Let&lsquo;s talk about your <b>IDEA</b>
-        </button>
-      </section>
+      <Banner></Banner>
       <main className={styles.main}>
         <h1 className="font-semibold lg:text-4xl">
           {"Our works".toUpperCase()}
@@ -45,24 +33,7 @@ export const AppScreen: IComponent = ({}) => {
 
         <div className={styles.grid}>
           {projectInfoList.map((projectInfo, idx) => (
-            <section className={`${styles.card} !border-slate-400`} key={idx}>
-              <h2 className="font-semibold lg:text-xl text-base">
-                {projectInfo.name}
-              </h2>
-              <p className="!text-xs whitespace-pre-line">
-                {projectInfo.description}
-              </p>
-              <footer className="mt-4">
-                <button className="rounded-full bg-default focus:outline-none text-xl px-4 py-2 text-center">
-                  <svg width="32" height="20" viewBox="0 0 60 23" fill="none">
-                    <path
-                      d="M58.6532 12.3474C59.239 11.7616 59.239 10.8119 58.6532 10.2261L49.1073 0.680141C48.5215 0.094355 47.5717 0.094355 46.9859 0.680141C46.4002 1.26593 46.4002 2.21568 46.9859 2.80146L55.4712 11.2867L46.9859 19.772C46.4002 20.3578 46.4002 21.3076 46.9859 21.8933C47.5717 22.4791 48.5215 22.4791 49.1073 21.8933L58.6532 12.3474ZM0.914612 12.7867L57.5925 12.7867V9.78674L0.914612 9.78674L0.914612 12.7867Z"
-                      fill="#EEEEEE"
-                    />
-                  </svg>
-                </button>
-              </footer>
-            </section>
+            <ProjectCard key={idx} projectInfo={projectInfo}></ProjectCard>
           ))}
         </div>
       </main>
