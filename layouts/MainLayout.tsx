@@ -16,7 +16,10 @@ export const MainLayout: IComponent = ({ children }) => {
       )}
     >
       {/* Smooth out darkmode transition with transition-all */}
-      <div className="w-full h-full bg-white dark:bg-default transition-all">
+      <div
+        className="w-full bg-white dark:bg-default transition-all"
+        style={{ minHeight: "100%" }}
+      >
         {children}
       </div>
     </div>
