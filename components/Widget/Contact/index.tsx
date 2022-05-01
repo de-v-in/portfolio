@@ -10,23 +10,23 @@ export const ContactComponent: IComponent<IContactProps> = ({
   phone,
 }) => {
   return (
-    <div className="project">
+    <div className="contact dark:text-white text-widget">
       <ul>
         {" "}
-        <li className="mb-3 text-[#68666c] text-base xl:text-sm 2xl:text-base">
-          <span className="text-black capitalize font-semibold mr-1">
+        <li className="mb-3 text-sm md:text-base">
+          <span className="dark:text-inherit text-black capitalize font-semibold mr-1">
             Address:
           </span>
           {address}
         </li>
-        <li className="mb-3 text-[#68666c] text-base xl:text-sm 2xl:text-base">
-          <span className="text-black capitalize font-semibold mr-1">
+        <li className="mb-3 text-sm md:text-base">
+          <span className="dark:text-inherit text-black capitalize font-semibold mr-1">
             Mail:{" "}
           </span>
           {mail}
         </li>
-        <li className="mb-3 text-[#68666c] text-base xl:text-sm 2xl:text-base">
-          <span className="text-black capitalize font-semibold mr-1">
+        <li className="mb-3 text-sm md:text-base">
+          <span className="dark:text-inherit text-black capitalize font-semibold mr-1">
             Phone:{" "}
           </span>
           {phone}

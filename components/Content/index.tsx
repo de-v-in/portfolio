@@ -12,7 +12,7 @@ interface IContentComponentProps {
 export const ContentComponent: IComponent<IContentComponentProps> = (props) => {
   const { heading, subheading, paragraphs, techs, scope } = props;
   return (
-    <>
+    <div className="content text-sm md:text-base">
       <div className="image mb-5">
         {/* content.src*/}
         <Image
@@ -29,7 +29,7 @@ export const ContentComponent: IComponent<IContentComponentProps> = (props) => {
       </div>
       <div>
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="text-base mb-7 text-[#68666C]">
+          <p key={index} className="text-inherit mb-7 text-widget">
             {paragraph}
           </p>
         ))}
@@ -45,10 +45,10 @@ export const ContentComponent: IComponent<IContentComponentProps> = (props) => {
         </ul>
       </div>
       <div>
-        <p className="text-base mb-7 text-[#68666C]">
+        <p className="text-inherit mb-7 text-widget">
           <span className="italic"> Scope of work: </span> {scope}
         </p>
       </div>
-    </>
+    </div>
   );
 };
