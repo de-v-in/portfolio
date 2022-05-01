@@ -59,7 +59,7 @@ export const DetailsScreen: IComponent = ({}) => {
           </div>
         </div>
         <div className="container mx-auto py-40">
-          <div className="grid grid-rows-3 xl:grid-cols-3 gap-10">
+          <div className="grid grid-rows-3 xl:grid-rows-none xl:grid-cols-3 gap-10">
             <div className="row-span-2 xl:col-span-2 flex flex-col p-2">
               <ContentComponent {...content} />
             </div>
