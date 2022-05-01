@@ -1,16 +1,19 @@
 import { DarkmodeAtom } from "@atoms/app";
+import { usePrefersDarkMode } from "@hooks/usePrefersDarkMode";
 import { cx } from "@utils/tools";
 import { useRecoilValue } from "recoil";
 
 export const MainLayout: IComponent = ({ children }) => {
   // Manual switch darkmode with state
+  const currentBrowserDarkmode = usePrefersDarkMode();
   const darkmode = useRecoilValue(DarkmodeAtom);
 
   return (
     <div
       className={cx(
         {
-          dark: darkmode === "dark",
+          dark:
+            darkmode === "auto" ? currentBrowserDarkmode : darkmode === "dark",
         },
         "w-full h-full overflow-x-hidden"
       )}
