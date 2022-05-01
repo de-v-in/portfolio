@@ -1,0 +1,44 @@
+{
+	"dms": {
+		"content": {
+			"imageSrc": "abcxaudfasdfsfsd",
+			"heading": "DMS",
+			"subheading": "Backend server",
+			"paragraphs": [
+				"Definition: Business strategy can be understood as the course of action or set of  decisions which assist the entrepreneurs in achieving specific business objectives.",
+				"Definition: Business strategy can be understood as the course of action or set of  decisions which assist the entrepreneurs in achieving specific business objectives.",
+				"Definition: Business strategy can be understood as the course of action or set of  decisions which assist the entrepreneurs in achieving specific business objectives."
+			],
+			"techs": [
+				"Golang",
+				"Gin",
+				"Gorm",
+				"MSSQL",
+				"Docker",
+				"CI/CD github action",
+				"Swagger documentation",
+				"Paho MQTT client",
+				"EMQX MQTT broker"
+			],
+			"scope": "Create HTTP API for client apps to control doors in university. Set up communication between BE server with Raspberry gateway via MQTT protocol/APIs.Store/retrieve data, logs and schedulers of doors/gateways."
+		},
+		"widget_detail_1": {
+			"title": "Project information",
+			"project": {
+				"date": "12/1/20021",
+				"location": "HCM",
+				"client": "string",
+				"category": "UX",
+				"link": "https://nextjs.org"
+			}
+		},
+		"widget_detail_2": {
+			"title": "contact information",
+			"contact": {
+				"address": "HCM",
+				"mail": "@gmial.com",
+				"phone": "034982343"
+			}
+		}
+	}
+}
