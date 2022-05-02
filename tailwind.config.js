@@ -16,6 +16,7 @@ module.exports = {
       },
       colors: {
         default: "#0A1116",
+        widget: "#848484",
       },
     },
   },

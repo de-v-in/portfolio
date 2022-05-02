@@ -1,0 +1,40 @@
+{
+  "content": {
+    "imageSrc": "",
+    "heading": "e-Parking",
+    "description":"Create app ecosystem for smart parking solutions for cars:\n- Kiosk app that controls parking operations.\n- Web app that manages user, parking data.\n- Core service APIs using AWS Lambda.\n- Marketing website.",
+    "subheading": "",
+    "paragraphs": [
+    ],
+    "techs": [
+      "Golang",
+      "Gin",
+      "Gorm",
+      "MSSQL",
+      "Docker",
+      "CI/CD github action",
+      "Swagger documentation",
+      "Paho MQTT client",
+      "EMQX MQTT broker"
+    ],
+    "scope": ""
+  },
+  "widget_detail_1": {
+    "title": "Project information",
+    "project": {
+      "date": "",
+      "location": "HCM",
+      "client": "string",
+      "category": "UX",
+      "link": "https://nextjs.org"
+    }
+  },
+  "widget_detail_2": {
+    "title": "Contact information",
+    "contact": {
+      "address": "Ho Chi Minh City",
+      "mail": "",
+      "phone": ""
+    }
+  }
+}

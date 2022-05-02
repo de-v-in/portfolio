@@ -1,0 +1,40 @@
+{
+  "content": {
+    "imageSrc": "",
+    "heading": "Crytal World Web3",
+    "description":"Create NFT token collection for crypto Games in order to trade between players.",
+    "subheading": "",
+    "paragraphs": [
+    ],
+    "techs": [
+      "Golang",
+      "Gin",
+      "Gorm",
+      "MSSQL",
+      "Docker",
+      "CI/CD github action",
+      "Swagger documentation",
+      "Paho MQTT client",
+      "EMQX MQTT broker"
+    ],
+    "scope": ""
+  },
+  "widget_detail_1": {
+    "title": "Project information",
+    "project": {
+      "date": "",
+      "location": "HCM",
+      "client": "string",
+      "category": "UX",
+      "link": "https://nextjs.org"
+    }
+  },
+  "widget_detail_2": {
+    "title": "Contact information",
+    "contact": {
+      "address": "Ho Chi Minh City",
+      "mail": "",
+      "phone": ""
+    }
+  }
+}
