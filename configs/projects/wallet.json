@@ -1,6 +1,6 @@
 {
   "content": {
-    "imageSrc": "",
+    "imageSrc": "/wallet.png",
     "heading": "Crypto wallet payment",
     "description":"Core payment for DEX wallet using Threshold Signature Scheme ( 2P-ECDSA )",
     "subheading": "",
