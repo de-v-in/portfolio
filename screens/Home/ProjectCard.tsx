@@ -33,9 +33,9 @@ export const ProjectCard: IComponent<IProjectCardProps> = ({
       </section>
       <footer className="mt-4">
         <Link href={url} passHref>
-          <button className="rounded-full border-2 hover:bg-yellow-400 hover:border-black border-slate-300 focus:outline-none text-xl px-4 py-2 text-center">
+          <button className="rounded-full border-2 active:border-yellow-300 border-slate-300 focus:outline-none text-xl px-4 py-2 text-center">
             <svg
-              className="fill-slate-300 hover:fill-black"
+              className="fill-slate-300 active:fill-yellow-300"
               width="32"
               height="20"
               viewBox="0 0 60 23"
