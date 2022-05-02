@@ -1,6 +1,6 @@
 {
   "content": {
-    "imageSrc": "abcxaudfasdfsfsd",
+    "imageSrc": "/dms.png",
     "heading": "Doorlock Management System",
     "description":"Provide Backend core service APIs for the IoT system of Ho Chi Minh City University of Education",
     "subheading": "Backend server",

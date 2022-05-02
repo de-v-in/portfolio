@@ -1,6 +1,6 @@
 {
   "content": {
-    "imageSrc": "",
+    "imageSrc": "/eparking.png",
     "heading": "e-Parking",
     "description":"Create app ecosystem for smart parking solutions for cars:\n- Kiosk app that controls parking operations.\n- Web app that manages user, parking data.\n- Core service APIs using AWS Lambda.\n- Marketing website.",
     "subheading": "",

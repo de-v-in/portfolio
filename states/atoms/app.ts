@@ -18,7 +18,7 @@ const ProjectInfoListAtom = atom<TProjectInfo[]>({
       name: "Doorlock Management System",
       description:
         "Provide Backend core service APIs for the IoT system of Ho Chi Minh City University of Education",
-      url: "",
+      imageSrc: "",
     },
     {
       name: "e-Parking",
@@ -28,19 +28,19 @@ const ProjectInfoListAtom = atom<TProjectInfo[]>({
       - Web app that manages user, parking data.
       - Core service APIs using AWS Lambda.
       - Marketing website.`,
-      url: "",
+      imageSrc: "",
     },
     {
       name: "CRYSTAL WORLD WEB3",
       description:
         "Create NFT token collection for crypto Games in order to trade between players.",
-      url: "",
+      imageSrc: "",
     },
     {
       name: "CRYPTO WALLET PAYMENT",
       description:
         "Core payment for DEX wallet using Threshold Signature Scheme ( 2P-ECDSA )",
-      url: "",
+      imageSrc: "",
     },
   ],
 });

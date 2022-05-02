@@ -19,7 +19,7 @@ export const SocialMediaGroupComponent: IComponent = () => {
       </a>
       <a
         className="facebook-icon p-1 lg:m-1"
-        href="https://www.facebook.com/tranhuyducseven/"
+        href="https://www.facebook.com/TranCongDuyNguyen/"
       >
         <svg
           className="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 text-white fill-current"
