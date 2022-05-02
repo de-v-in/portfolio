@@ -1940,6 +1940,11 @@ prettier@^2.6.2:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
   integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
 
+programming-languages-logos@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/programming-languages-logos/-/programming-languages-logos-0.0.3.tgz#17e073244d7886a2dc86d20ee6b3332ba765c5f4"
+  integrity sha512-58WiFkwCoEEwC86WUnRVSBM1vuNqxK4izjwR7uia/uAMw3zdFoVBa+JER1xIuyJxQrxf1T6+eZvoCnsnwXRfRg==
+
 prop-types@^15.6.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"

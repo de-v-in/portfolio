@@ -1,6 +1,6 @@
 export const Banner: IComponent = () => {
   return (
-    <section className="flex px-20 pt-16 flex-col w-full bg-default text-white">
+    <section className="flex px-20 flex-col w-full bg-default text-white pt-32 pb-64">
       <h1 className="md:text-6xl sm:text-3l text-3xl">
         We deliver high-standard software products for crypto market
       </h1>

@@ -9,6 +9,7 @@ export const ProjectCard: IComponent<IProjectCardProps> = ({ projectInfo }) => {
     <section className={`${styles.card} !border-slate-400`}>
       <h2 className="font-semibold lg:text-xl text-base">{projectInfo.name}</h2>
       <p className="!text-sm whitespace-pre-line">{projectInfo.description}</p>
+      <div className="h-44" />
       <footer className="mt-4">
         <button className="rounded-full bg-default focus:outline-none text-xl px-4 py-2 text-center">
           <svg width="32" height="20" viewBox="0 0 60 23" fill="none">
