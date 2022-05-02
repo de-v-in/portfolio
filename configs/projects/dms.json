@@ -1,7 +1,8 @@
 {
   "content": {
     "imageSrc": "abcxaudfasdfsfsd",
-    "heading": "DMS",
+    "heading": "Doorlock Management System",
+    "description":"Provide Backend core service APIs for the IoT system of Ho Chi Minh City University of Education",
     "subheading": "Backend server",
     "paragraphs": [
       "Definition: Business strategy can be understood as the course of action or set of  decisions which assist the entrepreneurs in achieving specific business objectives.",

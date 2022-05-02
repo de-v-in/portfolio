@@ -6,7 +6,10 @@ import Link from "next/link";
 export const FooterComponent: IComponent = () => {
   return (
     <>
-      <footer className="p-2 lg:p-5 grid grid-cols-4 items-center  bg-default">
+      <footer
+        id="footer"
+        className="p-2 lg:p-5 grid grid-cols-4 items-center  bg-default"
+      >
         <div className="p-5 h-full border-r-2 border-white col-span-3 flex items-center">
           <div className="text-white">
             <h2 className="font-bold lg:text-xl text-base">FAQ</h2>

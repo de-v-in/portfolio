@@ -1,0 +1,40 @@
+{
+  "content": {
+    "imageSrc": "",
+    "heading": "Crypto wallet payment",
+    "description":"Core payment for DEX wallet using Threshold Signature Scheme ( 2P-ECDSA )",
+    "subheading": "",
+    "paragraphs": [
+    ],
+    "techs": [
+      "Golang",
+      "Gin",
+      "Gorm",
+      "MSSQL",
+      "Docker",
+      "CI/CD github action",
+      "Swagger documentation",
+      "Paho MQTT client",
+      "EMQX MQTT broker"
+    ],
+    "scope": ""
+  },
+  "widget_detail_1": {
+    "title": "Project information",
+    "project": {
+      "date": "",
+      "location": "HCM",
+      "client": "string",
+      "category": "UX",
+      "link": "https://nextjs.org"
+    }
+  },
+  "widget_detail_2": {
+    "title": "Contact information",
+    "contact": {
+      "address": "Ho Chi Minh City",
+      "mail": "",
+      "phone": ""
+    }
+  }
+}

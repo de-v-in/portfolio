@@ -1,14 +1,13 @@
-import { ProjectInfoListAtom } from "@atoms/app";
 import { Banner } from "@components/Banner";
-import { ProjectCard } from "@components/ProjectCard/index";
+import { Projects } from "@configs/detail";
 import { cx } from "@utils/tools";
 import Head from "next/head";
-import { useRecoilState } from "recoil";
 
+import { ProjectCard } from "./ProjectCard";
 import styles from "./styles.module.scss";
 
 export const AppScreen: IComponent = ({}) => {
-  const [projectInfoList] = useRecoilState(ProjectInfoListAtom);
+  const projectArr = Object.values(Projects);
 
   return (
     <div className={cx("dark:text-white")}>
@@ -19,7 +18,7 @@ export const AppScreen: IComponent = ({}) => {
       </Head>
 
       <Banner />
-      <main className={styles.main}>
+      <div id="projects" className={styles.main}>
         <h1 className="font-semibold lg:text-4xl">
           {"Our works".toUpperCase()}
         </h1>
@@ -30,22 +29,28 @@ export const AppScreen: IComponent = ({}) => {
             "flex flex-row justify-center items-start mt-12"
           )}
         >
-          <div className="">
-            {projectInfoList
-              .slice(0, projectInfoList.length / 2)
+          <div>
+            {projectArr
+              .slice(0, projectArr.length / 2)
               .map((projectInfo, idx) => (
-                <ProjectCard key={idx} projectInfo={projectInfo}></ProjectCard>
+                <ProjectCard
+                  url={projectInfo.route}
+                  key={idx}
+                  projectInfo={projectInfo.data}
+                ></ProjectCard>
               ))}
           </div>
-          <div className="">
-            {projectInfoList
-              .slice(projectInfoList.length / 2)
-              .map((projectInfo, idx) => (
-                <ProjectCard key={idx} projectInfo={projectInfo}></ProjectCard>
-              ))}
+          <div>
+            {projectArr.slice(projectArr.length / 2).map((projectInfo, idx) => (
+              <ProjectCard
+                url={projectInfo.route}
+                key={idx}
+                projectInfo={projectInfo.data}
+              ></ProjectCard>
+            ))}
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 };
