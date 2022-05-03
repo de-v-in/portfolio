@@ -31,6 +31,9 @@
     padding-top: 10px;
   }
 }
+.alt_list {
+  display: none;
+}
 @media (max-width: 582px) {
   .embla {
     display: none;
@@ -38,7 +41,8 @@
       display: none;
     }
   }
-  .list {
+  .alt_list {
     display: flex;
+    
   }
 }

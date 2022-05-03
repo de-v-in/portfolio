@@ -75,7 +75,7 @@ export const TopBarComponent: IComponent = () => {
               </Link>
             </div>
             <div className="absolute lg:relative right-0 p-1 my-4 flex items-start justify-center lg:h-fit lg:my-0">
-              <SocialMediaGroupComponent />
+              <SocialMediaGroupComponent isMenu />
             </div>
           </div>
         </div>

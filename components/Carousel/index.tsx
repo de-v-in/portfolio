@@ -1,4 +1,5 @@
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
@@ -72,6 +73,23 @@ export const EmblaCarouselComponent: IComponent<
             onClick={() => scrollTo(index)}
           />
         ))}
+      </div>
+      <div className={styles.alt_list}>
+        <ul className="font-bold list-disc mb-7 pl-5">
+          {slides
+            .filter(
+              (slide) => slide.route.split("/").pop() !== paramURLOfThisProject
+            )
+            .map((slide, idx) => (
+              <li key={idx} className="ml-5 font-normal">
+                <Link href={slide.route}>
+                  <a className="text-[#3f3f3f] hover:underline text-xl font-semibold dark:text-white">
+                    {slide.data.content.heading}
+                  </a>
+                </Link>
+              </li>
+            ))}
+        </ul>
       </div>
     </>
   );
