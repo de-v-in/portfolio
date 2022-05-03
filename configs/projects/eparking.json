@@ -2,39 +2,39 @@
   "content": {
     "imageSrc": "/eparking.png",
     "heading": "e-Parking",
-    "description":"Create app ecosystem for smart parking solutions for cars:\n- Kiosk app that controls parking operations.\n- Web app that manages user, parking data.\n- Core service APIs using AWS Lambda.\n- Marketing website.",
+    "description": "Create app ecosystem for smart parking solutions for cars:\n- Kiosk app that controls parking operations.\n- Web app that manages user, parking data.\n- Core service APIs using AWS Lambda.\n- Marketing website.",
     "subheading": "",
     "paragraphs": [
+      "Develops core APIs e-Parking's app ecosystem using AWS lambda. Store/retrieve data (user, device, parking, analytic) of the system in AWS Dynamo.",
+      "Develops kiosk controller app, it acts as an automatic device which helps in controlling operation of the parking & replacing the human works. It's built on ElectronJs, ReactJs & MQTT protocol.",
+      "Develops web app, which helps in managing user, parking data. It's built on NextJs & MQTT protocol."
     ],
     "techs": [
-      "Golang",
-      "Gin",
-      "Gorm",
-      "MSSQL",
-      "Docker",
-      "CI/CD github action",
+      "Javascript",
+      "AWS Lambda, dynamoDB, Serverless",
+      "NextJs, ReactJs, ElectronJs",
+      "Docker, CI/CD pipeline",
       "Swagger documentation",
-      "Paho MQTT client",
-      "EMQX MQTT broker"
+      "MQTT.js client, EMQX MQTT broker"
     ],
-    "scope": ""
+    "scope": "R&D multiple applications for IoT system of e-Parking organization."
   },
   "widget_detail_1": {
     "title": "Project information",
     "project": {
-      "date": "",
-      "location": "HCM",
-      "client": "string",
-      "category": "UX",
-      "link": "https://nextjs.org"
+      "date": "01/03/2020",
+      "location": "Ho Chi Minh City",
+      "client": "e-Parking",
+      "category": "IoT",
+      "link": "https://www.facebook.com/epgvn/"
     }
   },
   "widget_detail_2": {
-    "title": "Contact information",
+    "title": "contact information",
     "contact": {
-      "address": "Ho Chi Minh City",
-      "mail": "",
-      "phone": ""
+      "address": "HCM",
+      "mail": "tcdnguyen1997@gmail.com",
+      "phone": "+84"
     }
   }
 }

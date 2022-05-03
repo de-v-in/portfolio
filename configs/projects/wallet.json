@@ -2,39 +2,36 @@
   "content": {
     "imageSrc": "/wallet.png",
     "heading": "Crypto wallet payment",
-    "description":"Core payment for DEX wallet using Threshold Signature Scheme ( 2P-ECDSA )",
+    "description": "Core payment for DEX wallet using Threshold Signature Scheme ( 2P-ECDSA )",
     "subheading": "",
     "paragraphs": [
+      "Develops TSS & payment operations for mobile wallet. Build up client library for wallet & execution servers."
     ],
     "techs": [
-      "Golang",
-      "Gin",
-      "Gorm",
-      "MSSQL",
-      "Docker",
-      "CI/CD github action",
-      "Swagger documentation",
-      "Paho MQTT client",
-      "EMQX MQTT broker"
+      "Rust",
+      "web3, btc, BIP-44, EIP-712, ERC20",
+      "Rocket, RocksDB, Rust-Flutter plugins",
+      "Docker, CI/CD github action",
+      "Swagger documentation"
     ],
-    "scope": ""
+    "scope": "R&D Threshold Signature Scheme ( 2P-ECDSA ) payment methods for DEX wallet"
   },
   "widget_detail_1": {
     "title": "Project information",
     "project": {
       "date": "",
-      "location": "HCM",
-      "client": "string",
-      "category": "UX",
-      "link": "https://nextjs.org"
+      "location": "Singapore",
+      "client": "private",
+      "category": "DeFi",
+      "link": "https://www.linkedin.com/in/tcdnguyen/"
     }
   },
   "widget_detail_2": {
-    "title": "Contact information",
+    "title": "contact information",
     "contact": {
-      "address": "Ho Chi Minh City",
-      "mail": "",
-      "phone": ""
+      "address": "HCM",
+      "mail": "tcdnguyen1997@gmail.com",
+      "phone": "+84"
     }
   }
 }

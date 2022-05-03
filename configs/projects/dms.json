@@ -2,42 +2,37 @@
   "content": {
     "imageSrc": "/dms.png",
     "heading": "Doorlock Management System",
-    "description":"Provide Backend core service APIs for the IoT system of Ho Chi Minh City University of Education",
+    "description": "Provide Backend core service APIs for the IoT system of Ho Chi Minh City University of Education",
     "subheading": "Backend server",
     "paragraphs": [
-      "Definition: Business strategy can be understood as the course of action or set of  decisions which assist the entrepreneurs in achieving specific business objectives.",
-      "Definition: Business strategy can be understood as the course of action or set of  decisions which assist the entrepreneurs in achieving specific business objectives.",
-      "Definition: Business strategy can be understood as the course of action or set of  decisions which assist the entrepreneurs in achieving specific business objectives."
+      "Develops web APIs for client apps in order to use for controlling hardware devices in university. Store/retrieve data, logs and schedulers of devices. Develops APIs for communication between BE server and Raspberry gateway via MQTT protocol.",
+      "Set up CI/CD workflow to automate building & deploying process. Set up document for client to use in training & developing the IoT system."
     ],
     "techs": [
       "Golang",
-      "Gin",
-      "Gorm",
-      "MSSQL",
-      "Docker",
-      "CI/CD github action",
+      "Gin, Gorm, MSSQL",
+      "Docker, CI/CD github action",
       "Swagger documentation",
-      "Paho MQTT client",
-      "EMQX MQTT broker"
+      "Paho MQTT client, EMQX MQTT broker"
     ],
-    "scope": "Create HTTP API for client apps to control doors in university. Set up communication between BE server with Raspberry gateway via MQTT protocol/APIs.Store/retrieve data, logs and schedulers of doors/gateways."
+    "scope": "R&D Backend APIs for IoT system of Ho Chi Minh City University of Education"
   },
   "widget_detail_1": {
     "title": "Project information",
     "project": {
-      "date": "12/1/20021",
-      "location": "HCM",
-      "client": "string",
-      "category": "UX",
-      "link": "https://nextjs.org"
+      "date": "01/12/2021",
+      "location": "Ho Chi Minh City",
+      "client": "Ho Chi Minh City University of Education",
+      "category": "IoT",
+      "link": "https://www.linkedin.com/in/tcdnguyen/"
     }
   },
   "widget_detail_2": {
     "title": "contact information",
     "contact": {
       "address": "HCM",
-      "mail": "@gmial.com",
-      "phone": "034982343"
+      "mail": "tcdnguyen1997@gmail.com",
+      "phone": "+84"
     }
   }
 }
