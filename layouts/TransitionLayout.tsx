@@ -10,7 +10,7 @@ type TransitionKind<RC> = {
   location: string;
 };
 
-const TIMEOUT: number = 200;
+const TIMEOUT: number = 300;
 
 type TTransitionStyles = {
   [key in TransitionStatus]?: {
@@ -20,20 +20,19 @@ type TTransitionStyles = {
 
 const TransitionStyles: TTransitionStyles = {
   entering: {
-    position: "absolute",
-    opacity: 0,
-    transform: "translateX(50px)",
+    opacity: 0.6,
+    filter: "blur(2px)",
   },
   entered: {
-    transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
+    transition: `opacity ${TIMEOUT}ms ease-in-out, filter ${TIMEOUT}ms ease-in-out`,
     opacity: 1,
-    transform: "translateX(0px)",
     animation: "blink .3s linear 2",
+    filter: "blur(0px)",
   },
   exiting: {
-    transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
-    opacity: 0,
-    transform: "translateX(-50px)",
+    transition: `opacity ${TIMEOUT}ms ease-in-out`,
+    opacity: 0.6,
+    filter: "blur(2px)",
   },
 };
 

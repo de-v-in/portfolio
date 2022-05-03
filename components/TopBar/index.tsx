@@ -5,6 +5,7 @@ import { cx } from "@utils/tools";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 
 export const TopBarComponent: IComponent = () => {
@@ -13,14 +14,21 @@ export const TopBarComponent: IComponent = () => {
   const handleToggleTopBar = () => {
     setToggleMode((status) => (status === "hidden" ? "show" : "hidden"));
   };
+
+  useEffect(() => {
+    // Auto hide when route changed
+    setToggleMode("hidden");
+  }, [router.pathname, setToggleMode]);
+
   return (
     <>
       <nav
         className={cx(
-          "z-10 w-full lg:grid lg:grid-cols-2 items-center py-2.5 lg:px-12 ",
+          "z-10 w-full lg:grid lg:grid-cols-2 items-center py-2.5 lg:px-12 px-6",
           {
             absolute: router.pathname === "/",
-            "bg-default": router.pathname !== "/",
+            "bg-default": router.pathname !== "/" || toggleMode === "show",
+            "h-screen lg:h-auto": toggleMode === "show",
           }
         )}
       >
@@ -30,7 +38,7 @@ export const TopBarComponent: IComponent = () => {
           </a>
         </Link>
         <button
-          className="absolute top-[22px] right-2 inline-flex p-1  rounded lg:hidden mr-0 text-white outline-none hover:text-amber-300"
+          className="absolute top-[22px] right-2 inline-flex p-1 px-6 rounded lg:hidden mr-0 text-white outline-none hover:text-amber-300"
           onClick={handleToggleTopBar}
         >
           <svg
@@ -49,22 +57,24 @@ export const TopBarComponent: IComponent = () => {
           </svg>
         </button>
         <div
-          className={`${toggleMode === "hidden" ? "hidden" : "flex"} lg:flex`}
+          className={`${
+            toggleMode === "hidden" ? "hidden" : "flex"
+          } lg:flex h-full`}
         >
-          <div className="flex flex-row justify-end w-full">
-            <div className="flex flex-col justify-center items-center lg:flex-row pr-12">
-              <Link href="#projects" passHref>
-                <a className="px-6 py-2 font-medium  text-center  text-white text-sm md:text-base lg:text-lg hover:underline hover:underline-offset-1">
+          <div className="flex justify-center lg:justify-end relative w-full h-full">
+            <div className="h-full lg:h-auto flex flex-col justify-center items-center lg:flex-row lg:pr-12">
+              <Link href="/#projects" passHref>
+                <a className="px-6 py-2 font-medium text-center text-white text-2xl lg:text-lg hover:underline hover:underline-offset-1">
                   Projects
                 </a>
               </Link>
               <Link href="#footer">
-                <a className="px-6 py-2 font-medium  text-center  text-white text-sm md:text-base lg:text-lg hover:underline hover:underline-offset-1">
+                <a className="px-6 py-2 font-medium text-center text-white text-2xl lg:text-lg hover:underline hover:underline-offset-1">
                   FAQ
                 </a>
               </Link>
             </div>
-            <div className="h-screen p-1 my-4 flex items-start   justify-center lg:h-fit  lg:my-0">
+            <div className="absolute lg:relative right-0 p-1 my-4 flex items-start justify-center lg:h-fit lg:my-0">
               <SocialMediaGroupComponent />
             </div>
           </div>

@@ -19,14 +19,14 @@ export const AppScreen: IComponent = ({}) => {
 
       <Banner />
       <div id="projects" className={styles.main}>
-        <h1 className="font-semibold lg:text-4xl">
+        <h1 className="font-semibold lg:text-4xl text-2xl">
           {"Our works".toUpperCase()}
         </h1>
 
         <div
           className={cx(
             styles.grid,
-            "flex flex-row justify-center items-start mt-12"
+            "flex flex-row justify-center items-center md:items-start mt-12"
           )}
         >
           <div>
