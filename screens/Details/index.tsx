@@ -1,4 +1,5 @@
 import { DarkmodeAtom } from "@atoms/app";
+import { EmblaCarouselComponent } from "@components/Carousel";
 import { ContentComponent } from "@components/Content";
 import { WidgetComponent } from "@components/Widget";
 import { Projects } from "@configs/detail";
@@ -8,8 +9,6 @@ import Link from "next/link";
 import { useRecoilState } from "recoil";
 
 export const DetailsScreen: IComponent = ({}) => {
-  const [darkMode, setDarkMode] = useRecoilState(DarkmodeAtom);
-
   const projectPrefix = window.location.pathname.split("/").pop();
   const projectDetail = Projects[projectPrefix!];
 
@@ -34,6 +33,7 @@ export const DetailsScreen: IComponent = ({}) => {
   const content = data.content;
   const widget = data.widget_detail_1;
   const widget2 = data.widget_detail_2;
+  const projectArr = Object.values(Projects);
 
   return (
     <div className={cx("dark:text-white")}>
@@ -43,7 +43,7 @@ export const DetailsScreen: IComponent = ({}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="details min-h-screen ">
-        <div className="container mx-auto px-1 pt-0 pb-10 xl:pb-40">
+        <div className="container mx-auto px-1 pt-0 pb-0">
           <div className="p-2 pt-10 flex flex-row items-center">
             <Link href="/#projects" passHref>
               <span className="font-bold opacity-70 text-default cursor-pointer hover:opacity-100">
@@ -75,8 +75,12 @@ export const DetailsScreen: IComponent = ({}) => {
               <WidgetComponent {...widget2} />
             </div>
           </div>
+          <p className="mt-10 mb-5 p-1 text-3xl font-bold">More projects:</p>
         </div>
       </main>
+      <div className="more-projects mb-52">
+        <EmblaCarouselComponent slides={projectArr} />
+      </div>
     </div>
   );
 };
