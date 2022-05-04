@@ -1,12 +1,10 @@
-import { DarkmodeAtom } from "@atoms/app";
-import { EmblaCarouselComponent } from "@components/Carousel";
+import { CarouselComponent } from "@components/Carousel";
 import { ContentComponent } from "@components/Content";
 import { WidgetComponent } from "@components/Widget";
 import { Projects } from "@configs/detail";
 import { cx } from "@utils/tools";
 import Head from "next/head";
 import Link from "next/link";
-import { useRecoilState } from "recoil";
 
 export const DetailsScreen: IComponent = ({}) => {
   const projectPrefix = window.location.pathname.split("/").pop();
@@ -77,12 +75,12 @@ export const DetailsScreen: IComponent = ({}) => {
               <WidgetComponent {...widget2} />
             </div>
           </div>
-          <h1 className="text-3xl font-bold p-3">More projects:</h1>
+          <div className="more-projects mb-52">
+            <h1 className="text-3xl font-bold p-3">More projects:</h1>
+            <CarouselComponent slides={projectArr} />
+          </div>
         </div>
       </main>
-      <div className="more-projects mb-52">
-        <EmblaCarouselComponent slides={projectArr} />
-      </div>
     </div>
   );
 };

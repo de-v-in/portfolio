@@ -9,9 +9,7 @@ interface ISvgComponentProps {
   className?: string;
 }
 
-interface IComponent<T = {}>
-  extends React.FC<React.PropsWithChildren<T>>,
-    ReactElement<> {}
+interface IComponent<T = {}> extends React.FC<React.PropsWithChildren<T>> {}
 interface IPageComponent<T = {}> extends IComponent<T> {
   getLayout?: TGetLayout;
 }
