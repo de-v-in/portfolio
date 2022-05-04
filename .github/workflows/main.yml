@@ -37,7 +37,7 @@ jobs:
         run: yarn build
 
       - name: Deploy
-        # if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request'
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
