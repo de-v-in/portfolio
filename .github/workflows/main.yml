@@ -33,16 +33,20 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Docker Login
-        env:
-          DOCKER_USER: ${{secrets.DOCKER_USER}}
-          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-        run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+      - name: Build
+        run: yarn build
 
-      - name: Docker Build
+      - name: Deploy
         env:
-          IMAGE_NAME: devin-portfolio
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
         run: |
-          docker build -t $IMAGE_NAME .
-          docker tag $IMAGE_NAME:latest ${{secrets.DOCKER_USER}}/$IMAGE_NAME:latest
-          docker push ${{secrets.DOCKER_USER}}/$IMAGE_NAME
+          ./.vercel/linkproject.sh
+          if [ "${BRANCH_NAME}" == "main" ];
+          then
+            npx vercel --token $VERCEL_TOKEN --scope $VERCEL_ORG_ID --confirm --prod
+          else
+            npx vercel --token $VERCEL_TOKEN --scope $VERCEL_ORG_ID --confirm
+          fi
