@@ -1,23 +1,12 @@
-interface SocialMediaGroupComponentProps {
-  isMenu?: boolean;
-}
-export const SocialMediaGroupComponent: IComponent<
-  SocialMediaGroupComponentProps
-> = ({ isMenu }) => {
+export const SocialMediaGroupComponent: IComponent = () => {
   return (
-    <div
-      className={`${
-        isMenu ? "justify-around" : "justify-center"
-      } flex  p-1 w-32 lg:w-3/4`}
-    >
+    <div className="justify-around flex  p-1 w-32 lg:w-3/4">
       <a
         className="info-icon p-1 lg:m-1"
         href="https://www.linkedin.com/in/tcdnguyen/"
       >
         <svg
-          className={`${
-            isMenu ? "w-6 h-6  lg:w-5 lg:h-5 " : "w-4 h-4  lg:w-5 lg:h-5"
-          } text-white fill-current`}
+          className="w-5 h-5  text-white fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="2 2 16 16"
         >
@@ -33,9 +22,7 @@ export const SocialMediaGroupComponent: IComponent<
         href="https://www.facebook.com/TranCongDuyNguyen/"
       >
         <svg
-          className={`${
-            isMenu ? "w-6 h-6  lg:w-5 lg:h-5 " : "w-4 h-4  lg:w-5 lg:h-5"
-          } text-white fill-current`}
+          className="w-5 h-5  text-white fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -44,9 +31,7 @@ export const SocialMediaGroupComponent: IComponent<
       </a>
       <a className="github-icon p-1 lg:m-1" href="https://github.com/de-v-in">
         <svg
-          className={`${
-            isMenu ? "w-6 h-6  lg:w-5 lg:h-5 " : "w-4 h-4  lg:w-5 lg:h-5"
-          } text-white fill-current`}
+          className="w-5 h-5  text-white fill-current"
           viewBox="0 0 16 16"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
