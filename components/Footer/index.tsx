@@ -13,17 +13,17 @@ export const FooterComponent: IComponent = () => {
         <div className="mb-12 xl:m-0 p-8 h-full  col-span-3 flex items-center relative">
           <div className="text-white xl:border-r-2 xl:border-white w-full">
             <h2 className="font-bold text-4xl md:text-5xl xl:text-3xl">FAQ</h2>
-            <h3 className="text-[#BEBEBE] mt-5 text-xl md:text-2xl xl:text-xl">
+            <h3 className="text-[#BEBEBE] mt-5 text-lg md:text-2xl xl:text-xl">
               Who are we?
             </h3>
-            <p className="mt-3 pb-4 text-xl">
+            <p className="mt-3 pb-4 text-lg">
               We Vietnamese developers who bring global criteria into your
               products with the best price.
             </p>
-            <h3 className="text-[#BEBEBE] mt-5 text-xl md:text-2xl xl:text-xl">
+            <h3 className="text-[#BEBEBE] mt-5 text-lg md:text-2xl xl:text-xl">
               What is our technical skills ?
             </h3>
-            <p className="mt-3 pb-4 text-xl">
+            <p className="mt-3 pb-4 text-lg">
               We do full-stack development, establish Devops workflows, build
               core crypto functions.
             </p>

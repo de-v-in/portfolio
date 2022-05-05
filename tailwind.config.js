@@ -19,6 +19,9 @@ module.exports = {
         widget: "#848484",
       },
     },
+    screens: {
+      ip5: "324px",
+    },
   },
   plugins: [],
 };

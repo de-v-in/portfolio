@@ -40,7 +40,7 @@ export const CarouselComponent: IComponent<CarouselComponentProps> = ({
 
   return (
     <>
-      <div className="carousel-wrapper w-full">
+      <div className="carousel-wrapper w-full md:p-20">
         <TypedCarousel breakPoints={breakPoints}>{renderSlide}</TypedCarousel>
       </div>
     </>
