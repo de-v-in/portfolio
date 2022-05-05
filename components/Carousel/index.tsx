@@ -18,9 +18,7 @@ export const CarouselComponent: IComponent<CarouselComponentProps> = ({
   const paramURLOfThisProject = window.location.pathname.split("/").pop();
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 1 },
-    { width: 768, itemsToShow: 2 },
-    { width: 850, itemsToShow: 2 },
+    { width: 550, itemsToShow: 2 },
     { width: 1150, itemsToShow: 3 },
   ];
 
