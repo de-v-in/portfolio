@@ -10,9 +10,11 @@ export const DefaultLayout: IComponent = ({ children }) => {
     <div className="default-layout">
       <TopBarComponent />
       <TransitionLayout location={router.pathname}>
-        <div>{children}</div>
+        <>
+          {children}
+          <FooterComponent />
+        </>
       </TransitionLayout>
-      <FooterComponent />
     </div>
   );
 };

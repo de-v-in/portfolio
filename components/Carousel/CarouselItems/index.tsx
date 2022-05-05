@@ -19,10 +19,7 @@ export const ICarouselItemComponent: IComponent<ICarouselItemProps> = ({
   const { imageSrc, heading, description } = content;
   return (
     <Link href={url} passHref>
-      <a
-        target="_blank"
-        className="block item p-8 h-[640px] xl:h-[560px] 2xl:h-[640px] w-full bg-white rounded-md m-3 text-base shadow-md dark:bg-default dark:border-2 dark:border-white"
-      >
+      <a className="block item p-8 h-[640px] xl:h-[560px] 2xl:h-[640px] w-full bg-white rounded-md m-3 text-base shadow-md dark:bg-default dark:border-2 border border-zinc-100 dark:border-white">
         <div className="item-img w-full h-1/2 relative rounded-md">
           <Image
             src={imageSrc}
