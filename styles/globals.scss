@@ -55,30 +55,3 @@ a {
     border: 1px solid white;
   }
 }
-
-/** carousel **/
-/* round buttons on hover */
-.rec {
-  &.rec-arrow {
-    background: #ddd;
-    &:hover {
-      border-radius: 50%;
-      background-color: #00c2d6 !important;
-    }
-    /* hide disabled buttons */
-    &:disabled {
-      visibility: hidden;
-    }
-  }
-  &.rec-dot {
-    background: rgb(93, 236, 236);
-    &.rec-dot_active {
-      box-shadow: 0 0 1px 3px rgb(9, 103, 180);
-    }
-  }
-}
-
-/* remove a dot when fully displayed */
-.rec-pagination button:first-child:nth-last-child(1) {
-  display: none;
-}

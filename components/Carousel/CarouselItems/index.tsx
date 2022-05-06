@@ -19,7 +19,7 @@ export const ICarouselItemComponent: IComponent<ICarouselItemProps> = ({
   const { imageSrc, heading, description } = content;
   return (
     <Link href={url} passHref>
-      <a className="carousel-item block m-5 p-6 w-full h-[36vh] rounded-md text-base shadow-md bg-white dark:bg-default border-2 border-zinc-100 dark:border-white md:p-4 2xl:p-5">
+      <a className="carousel-item block h-[33vh] m-2 p-5 rounded-md shadow-md bg-white dark:bg-default border-2 border-zinc-100 dark:border-white lg:p-4 ">
         <div className="item-img w-full h-1/2 relative rounded-md">
           <Image
             src={imageSrc}
@@ -28,13 +28,9 @@ export const ICarouselItemComponent: IComponent<ICarouselItemProps> = ({
             className="rounded-md"
           />
         </div>
-        <div className="item-content flex flex-col justify-center sm:justify-start items-start overflow-y-hidden">
-          <h1 className="p-1 text-xl my-5 sm:my-1 md:text-sm xl:text-xl font-medium">
-            {heading}
-          </h1>
-          <p className="hidden p-1 sm:block sm:text-xs md:text-[12px] xl:text-xs xl:py-0 2xl:text-[14px] text-widget  overflow-y-hidden">
-            {description}
-          </p>
+        <div className="item-content flex flex-col justify-center sm:justify-start items-start ">
+          <h1 className="p-1 font-medium">{heading}</h1>
+          <p className="p-1 text-widget">{description}</p>
         </div>
       </a>
     </Link>

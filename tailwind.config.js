@@ -18,6 +18,9 @@ module.exports = {
         default: "#0A1116",
         widget: "#848484",
       },
+      screens: {
+        pc: "1200px",
+      },
     },
   },
   plugins: [],
