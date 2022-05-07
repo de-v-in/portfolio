@@ -79,11 +79,10 @@ $slick-opacity-not-active: 0.25 !default;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(7, 0, 0);
     background: linear-gradient(
       180deg,
-      rgba(7, 0, 0, 0.13321769137342432) 48%,
-      rgba(16, 22, 23, 0.5505846381521359) 97%
+      rgba(7, 0, 0, 0.180836738992472) 13%,
+      rgba(16, 22, 23, 0.9203325373117998) 94%
     );
     z-index: 5;
     cursor: pointer;
@@ -346,14 +345,19 @@ $slick-opacity-not-active: 0.25 !default;
     left: -6px;
   }
   .slick-next {
+    right: 4px;
+  }
+}
+@media (max-width: 1024px) {
+  .slick-next {
     right: -8px;
   }
 }
 @media (max-width: 768px) {
   .carousel-item {
     h1 {
-      margin-top: 10px;
       font-size: 22px;
+      margin-top: 36px;
     }
   }
   .slick-next {
@@ -384,7 +388,7 @@ $slick-opacity-not-active: 0.25 !default;
   .carousel-item {
     transform: translateX(36px);
     h1 {
-      margin-top: 20px;
+      margin-top: 50px;
       line-height: 32px;
     }
     p {
@@ -409,10 +413,10 @@ $slick-opacity-not-active: 0.25 !default;
     transform: translateX(34px);
     h1 {
       font-size: 28px;
-      margin-top: 5px;
+      margin-top: 30px;
     }
     p {
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
     }
   }
   .slick-next {
@@ -425,7 +429,7 @@ $slick-opacity-not-active: 0.25 !default;
     height: 180px;
     h1 {
       font-size: 19px;
-      margin-top: 0px;
+      margin-top: 28px;
     }
     p {
       -webkit-line-clamp: 2;
@@ -443,6 +447,8 @@ $slick-opacity-not-active: 0.25 !default;
     transform: translateX(20px);
     h1 {
       font-size: 20px;
+      line-height: 100%;
+      margin-top: 42px;
     }
     p {
       font-size: 0.5rem;

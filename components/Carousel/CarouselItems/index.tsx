@@ -29,9 +29,9 @@ export const ICarouselItemComponent: IComponent<ICarouselItemProps> = ({
             layout="fill"
           />
         </div>
-        <div className="item-content flex flex-col justify-center sm:justify-start items-start ">
-          <h1 className="p-1 font-medium">{heading}</h1>
-          <p className="p-1 ">{description}</p>
+        <div className="z-10 item-content flex flex-col justify-center sm:justify-start items-start ">
+          <h1 className="">{heading}</h1>
+          <p className="">{description}</p>
         </div>
       </a>
     </Link>
