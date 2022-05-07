@@ -17,7 +17,7 @@ export const FooterComponent: IComponent = () => {
               Who are we?
             </h3>
             <p className="mt-3 pb-4 text-lg">
-              We Vietnamese developers who bring global criteria into your
+              We are Vietnamese developers who bring global criteria into your
               products with the best price.
             </p>
             <h3 className="text-[#BEBEBE] mt-5 text-lg md:text-2xl xl:text-xl">
