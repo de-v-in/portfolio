@@ -56,7 +56,7 @@ export const CarouselComponent: IComponent<CarouselComponentProps> = ({
   };
   return (
     <>
-      <div className="w-full md:p-10 xl:p-24">
+      <div className="w-full pt-4 pb-8 pr-24 carousel-wrapper">
         {/* <TypedCarousel renderItems={}>{renderSlide}</TypedCarousel> */}
         <Slider {...settings}>
           {slides.map((slide, idx) => {

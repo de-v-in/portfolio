@@ -75,7 +75,7 @@ export const DetailsScreen: IComponent = ({}) => {
               <WidgetComponent {...widget2} />
             </div>
           </div>
-          <div className="more-projects mb-52">
+          <div className="more-projects">
             <h1 className="text-3xl font-bold p-3">More projects:</h1>
             <CarouselComponent slides={projectArr} />
           </div>
