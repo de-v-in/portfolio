@@ -1,15 +1,12 @@
-import { DarkmodeAtom } from "@atoms/app";
+import { CarouselComponent } from "@components/Carousel";
 import { ContentComponent } from "@components/Content";
 import { WidgetComponent } from "@components/Widget";
 import { Projects } from "@configs/detail";
 import { cx } from "@utils/tools";
 import Head from "next/head";
 import Link from "next/link";
-import { useRecoilState } from "recoil";
 
 export const DetailsScreen: IComponent = ({}) => {
-  const [darkMode, setDarkMode] = useRecoilState(DarkmodeAtom);
-
   const projectPrefix = window.location.pathname.split("/").pop();
   const projectDetail = Projects[projectPrefix!];
 
@@ -34,6 +31,7 @@ export const DetailsScreen: IComponent = ({}) => {
   const content = data.content;
   const widget = data.widget_detail_1;
   const widget2 = data.widget_detail_2;
+  const projectArr = Object.values(Projects);
 
   return (
     <div className={cx("dark:text-white")}>
@@ -43,10 +41,10 @@ export const DetailsScreen: IComponent = ({}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="details min-h-screen ">
-        <div className="container mx-auto px-1 pt-0 pb-10 xl:pb-40">
-          <div className="p-2 pt-10 flex flex-row items-center">
+        <div className="container mx-auto px-1 pt-0 pb-0">
+          <div className="p-2 pt-10 flex flex-row items-center dark:text-light">
             <Link href="/#projects" passHref>
-              <span className="font-bold opacity-70 text-default cursor-pointer hover:opacity-100">
+              <span className="font-bold opacity-70 text-inherit cursor-pointer hover:opacity-100">
                 Our works
               </span>
             </Link>
@@ -64,7 +62,9 @@ export const DetailsScreen: IComponent = ({}) => {
                 d="M9 5l7 7-7 7"
               />
             </svg>
-            <span className="opacity-70 text-default">{content.heading}</span>
+            <span className="opacity-70 text-default dark:text-white">
+              {content.heading}
+            </span>
           </div>
           <div className="grid grid-rows-3 xl:grid-rows-none xl:grid-cols-3 gap-10">
             <div className="row-span-2 xl:col-span-2 flex flex-col p-2">
@@ -74,6 +74,10 @@ export const DetailsScreen: IComponent = ({}) => {
               <WidgetComponent {...widget} />
               <WidgetComponent {...widget2} />
             </div>
+          </div>
+          <div className="more-projects">
+            <h1 className="text-3xl font-bold p-3">More projects:</h1>
+            <CarouselComponent slides={projectArr} />
           </div>
         </div>
       </main>

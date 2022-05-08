@@ -8,22 +8,22 @@ export const FooterComponent: IComponent = () => {
     <>
       <footer
         id="footer"
-        className="p-2 lg:p-5 grid grid-cols-4 items-center  bg-default"
+        className="p-2 lg:p-5 xl:grid xl:grid-cols-4 items-center  bg-default"
       >
-        <div className="p-5 h-full border-r-2 border-white col-span-3 flex items-center">
-          <div className="text-white">
-            <h2 className="font-bold lg:text-xl text-base">FAQ</h2>
-            <h3 className="text-[#BEBEBE] mt-3 text-xxs md:text-sm lg:text-base">
+        <div className="mb-12 xl:m-0 p-8 h-full  col-span-3 flex items-center relative">
+          <div className="text-white xl:border-r-2 xl:border-white w-full">
+            <h2 className="font-bold text-4xl md:text-5xl xl:text-3xl">FAQ</h2>
+            <h3 className="text-[#BEBEBE] mt-5 text-lg md:text-2xl xl:text-xl">
               Who are we?
             </h3>
-            <p className="lg:text-base md:text-sm text-xxs">
-              We Vietnamese developers who bring global criteria into your
+            <p className="mt-3 pb-4 text-lg">
+              We are Vietnamese developers who bring global criteria into your
               products with the best price.
             </p>
-            <h3 className="text-[#BEBEBE] mt-3 text-xxs md:text-sm lg:text-base">
+            <h3 className="text-[#BEBEBE] mt-5 text-lg md:text-2xl xl:text-xl">
               What is our technical skills ?
             </h3>
-            <p className="lg:text-base md:text-sm text-xxs">
+            <p className="mt-3 pb-4 text-lg">
               We do full-stack development, establish Devops workflows, build
               core crypto functions.
             </p>

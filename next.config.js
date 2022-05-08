@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextTranslate = require("next-translate");
 const intercept = require("intercept-stdout");
+const path = require("path");
 
 const nextConfig = nextTranslate({
   swcMinify: true,
@@ -11,6 +12,9 @@ const nextConfig = nextTranslate({
   },
   experimental: {
     outputStandalone: true,
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
   },
 });
 

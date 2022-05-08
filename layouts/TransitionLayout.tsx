@@ -26,10 +26,10 @@ const TransitionStyles: TTransitionStyles = {
   entered: {
     transition: `opacity ${TIMEOUT}ms ease-in-out, filter ${TIMEOUT}ms ease-in-out`,
     opacity: 1,
-    animation: "blink .3s linear 2",
     filter: "blur(0px)",
   },
   exiting: {
+    position: "absolute",
     transition: `opacity ${TIMEOUT}ms ease-in-out`,
     opacity: 0.6,
     filter: "blur(2px)",
@@ -41,7 +41,7 @@ const TransitionLayout: React.FC<TransitionKind<ReactChild>> = function ({
   location,
 }) {
   return (
-    <TransitionGroup className="h-full relative">
+    <TransitionGroup className="h-full relative overflow-hidden">
       <ReactTransition
         key={location}
         timeout={{

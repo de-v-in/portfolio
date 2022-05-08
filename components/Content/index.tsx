@@ -1,4 +1,3 @@
-import details01 from "@public/details01.png";
 import Image from "next/image";
 
 interface IContentComponentProps {
@@ -10,20 +9,20 @@ interface IContentComponentProps {
   scope: string;
 }
 export const ContentComponent: IComponent<IContentComponentProps> = (props) => {
-  const { heading, subheading, paragraphs, techs, scope } = props;
+  const { imageSrc, heading, subheading, paragraphs, techs, scope } = props;
   return (
     <div className="content text-sm md:text-base">
-      <div className="image mb-5">
-        {/* content.src*/}
+      <div className="item-img  relative rounded-md">
         <Image
-          src={details01}
+          src={imageSrc}
           alt="Details_01"
-          height={430}
+          width={950}
+          height={500}
           className="rounded-lg"
           layout="responsive"
         />
       </div>
-      <div className="content mb-5 p-1">
+      <div className="content my-5 p-1">
         <h1 className="text-3xl font-bold ">{heading}</h1>
         <h2 className="text-2xl font-medium ">{subheading}</h2>
       </div>

@@ -1,4 +1,5 @@
 import "@styles/globals.scss";
+import "@styles/slick/slick.scss";
 
 import { MainLayout } from "@layouts/MainLayout";
 import type { AppProps } from "next/app";
