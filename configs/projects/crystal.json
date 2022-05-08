@@ -1,39 +1,36 @@
 {
   "content": {
-    "imageSrc": "/crystal.png",
-    "heading": "Crytal World Web3",
+    "imageSrc": "/crystal.jpg",
+    "heading": "Crytal World NFT",
     "description":"Create NFT token collection for crypto Games in order to trade between players.",
-    "subheading": "",
+    "subheading": "Web3 Aplication",
     "paragraphs": [
+      "This is an NFT which can be combined and upgrade into higher tiers. Users will buy it on Opensea and use our Web3 Application for interactment"
     ],
     "techs": [
-      "Golang",
-      "Gin",
-      "Gorm",
-      "MSSQL",
-      "Docker",
-      "CI/CD github action",
-      "Swagger documentation",
-      "Paho MQTT client",
-      "EMQX MQTT broker"
+      "Typescript",
+      "Hardhat",
+      "Alchemy",
+      "NextJS",
+      "Docker"
     ],
-    "scope": ""
+    "scope": "R&D NFT Token and NFT marketplace for selling"
   },
   "widget_detail_1": {
     "title": "Project information",
     "project": {
-      "date": "",
+      "date": "2022",
       "location": "HCM",
       "client": "string",
       "category": "UX",
-      "link": "https://nextjs.org"
+      "link": "https://nft.550studios.com"
     }
   },
   "widget_detail_2": {
     "title": "Contact information",
     "contact": {
       "address": "Ho Chi Minh City",
-      "mail": "",
+      "mail": "tctien342@gmail.com",
       "phone": ""
     }
   }
