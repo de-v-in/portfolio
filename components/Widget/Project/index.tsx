@@ -46,7 +46,7 @@ export const ProjectComponent: IComponent<IProjectProps> = ({
           <span className="dark:text-inherit text-black capitalize font-semibold mr-1">
             Link:{" "}
           </span>
-          <a href="" className="text-[#0054ff] hover:underline">
+          <a href={link} className="text-[#0054ff] hover:underline">
             {link}
           </a>
         </li>
