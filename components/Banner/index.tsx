@@ -12,12 +12,15 @@ export const Banner: IComponent = () => {
           We keep your application running smoothly in any level, from MVP to
           large scale application & up-to-date with the latest technology.
         </p>
-        <button
-          type="button"
-          className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 rounded-full bg-yellow-300 text-black focus:outline-none text-xl  px-5 py-2.5 text-center mr-2 mb-8"
-        >
-          Let&lsquo;s talk about your <b>IDEA</b>
-        </button>
+        <Link href="/youridea" passHref>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 rounded-full bg-yellow-300 text-black focus:outline-none text-xl  px-5 py-2.5 text-center mr-2 mb-8"
+          >
+            Let&lsquo;s talk about your <b>IDEA</b>
+          </a>
+        </Link>
       </div>
       <div className="w-full h-full absolute top-0 left-0">
         <LanguageBackground />
