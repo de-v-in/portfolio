@@ -6,11 +6,12 @@ export const Banner: IComponent = () => {
     <div className="flex min-h-screen px-6 md:px-20 flex-col w-full bg-default text-white pt-52 pb-96 md:pb-64 relative justify-center items-center">
       <div className="z-10">
         <h1 className="md:text-6xl sm:text-3l text-3xl">
-          We deliver high-standard software products for crypto market
+          Are you finding a team who can provide Reliable and Scalable software
+          products?
         </h1>
         <p className="my-6 md:my-4 text-xl">
-          We keep your application running smoothly in any level, from MVP to
-          large scale application & up-to-date with the latest technology.
+          Look no further! We are the catalyst your business needs to thrive at
+          every stage of its journey!
         </p>
         <Link href="/youridea" passHref>
           <a
@@ -30,7 +31,9 @@ export const Banner: IComponent = () => {
           className="absolute hidden lg:flex bottom-6 flex-col items-center animate-pulse cursor-pointer active:scale-90 duration-300"
           style={{ animationDuration: "4s" }}
         >
-          <span className="text-sm mb-1 text-white">OUR PROJECTS</span>
+          <span className="text-sm mb-1 text-white">
+            The journey begin here
+          </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"

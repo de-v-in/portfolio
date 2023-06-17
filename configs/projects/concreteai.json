@@ -1,0 +1,43 @@
+{
+    "content": {
+      "imageSrc": "/concreteai.png",
+      "heading": "concreteai.io",
+      "description": "Create an app to monitor and manage the status of the concrete mixing",
+      "subheading": "",
+      "paragraphs": [
+        "ConcreteAI is a startup company that provides a solution to monitor and manage the status of the concrete mixing.",
+        "Develops a web app that helps users to monitor and manage the status of the concrete mixing.",
+        "Develops a microservice system to manage the core API. It's built on NodeJs, Golang.",
+        "Packaging the app into different environment to adapt business model."
+      ],
+      "techs": [
+        "Javascript, Golang",
+        "NextJs",
+        "AWS",
+        "MongoDB",
+        "Docker, CI/CD pipeline",
+        "Microservices",
+        "TDD"
+      ],
+      "scope": "Deliver real world product."
+    },
+    "widget_detail_1": {
+      "title": "Project information",
+      "project": {
+        "date": "01/06/2022",
+        "location": "Singapore",
+        "client": "concreteai.io",
+        "category": "IoT",
+        "link": "https://www.concreteai.io/"
+      }
+    },
+    "widget_detail_2": {
+      "title": "contact information",
+      "contact": {
+        "address": "HCM",
+        "mail": "tcdnguyen1997@gmail.com",
+        "phone": "+84"
+      }
+    }
+  }
+  

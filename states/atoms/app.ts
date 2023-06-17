@@ -15,6 +15,12 @@ const ProjectInfoListAtom = atom<TProjectInfo[]>({
   key: "PROJECT_INFO",
   default: [
     {
+      name: "concreteai.io",
+      description: `
+        Create an app to monitor and manage the status of the concrete mixing`,
+      imageSrc: "",
+    },
+    {
       name: "Doorlock Management System",
       description:
         "Provide Backend core service APIs for the IoT system of Ho Chi Minh City University of Education",
@@ -23,7 +29,7 @@ const ProjectInfoListAtom = atom<TProjectInfo[]>({
     {
       name: "e-Parking",
       description: `
-      Create app ecosystem for smart parking solutions for cars:
+      Create an ecosystem for smart parking solutions for cars:
       - Kiosk app that controls parking operations.
       - Web app that manages user, parking data.
       - Core service APIs using AWS Lambda.

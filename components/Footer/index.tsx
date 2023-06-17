@@ -17,15 +17,15 @@ export const FooterComponent: IComponent = () => {
               Who are we?
             </h3>
             <p className="mt-3 pb-4 text-lg">
-              We are Vietnamese developers who bring global criteria into your
-              products with the best price.
+              We are Vietnamese developers who bring GLOBAL STANDARDS into your
+              products.
             </p>
             <h3 className="text-[#BEBEBE] mt-5 text-lg md:text-2xl xl:text-xl">
-              What is our technical skills ?
+              What is our skills ?
             </h3>
             <p className="mt-3 pb-4 text-lg">
-              We do full-stack development, establish Devops workflows, build
-              core crypto functions.
+              We design and build scalable + reliable + maintainable software.
+              We also train people and teams.
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ export const FooterComponent: IComponent = () => {
             </a>
           </Link>
           <span className="p-1 text-[#BEBEBE] text-xxs lg:text-xs text-thin  text-center">
-            @Copyright by DEVIN 2022
+            @Copyright by DEVIN 2023
           </span>
           <div className="p-1 my-3 flex items-center   justify-center lg:h-fit  lg:my-1">
             <SocialMediaGroupComponent />
